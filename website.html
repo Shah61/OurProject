@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team</title>
+    <link rel="stylesheet" href="website.css">
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="page1" id="first">
+        <video autoplay loop muted playsinline class="back-video">
+            <source src="images/video2.mp4" type="video/mp4">
+        </video>
+
+        <nav>
+            <p>KNAPSACK4U</p>
+            <img src="images/img3-removebg-preview.png" class="logo">
+            <ul>
+                <a href="#" id="team-link2" style="--clr:#6eff3e"><span>THIS IS US</span><i></i></a>
+            </ul>
+        </nav>
+        <div class="content">
+            <h1>Optimizing University Budgets</h1>
+            <p>Empowering college students to make budget-conscious choices and prioritize essential expenses for a
+                productive university experience.</p>
+        </div>
+    </div>
+
+
+    <section id="team" class="page">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+
+        <div id="teamlink" class="team-heading">
+
+            <ul>
+
+                <a href="#" id="team-link" style="--clr:#ff1867"><span>Our Project</span><i></i></a>
+            </ul>
+
+        </div>
+        <!-- Slider -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="team-box">
+                        <div class="imgBx">
+                            <img src="images/hakim.jpg">
+                        </div>
+                        <div class="imgtext">
+                            <strong>Muhammad Hakim</strong>
+                            <span>Team Leader</span>
+                            <div class="social">
+                                <a href="https://www.instagram.com/kem.zul/">
+                                    <img class="img-resize"
+                                        src="images/new-small-Instagram-logo-full-colour-png-184x184-pixels.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="team-box">
+                        <div class="imgBx">
+                            <img src="images/haris.jpg">
+                        </div>
+                        <div class="imgtext">
+                            <strong>Haris Azhari</strong>
+                            <span>Software Developer</span>
+                            <div class="social">
+                                <a href="https://www.instagram.com/haris_azhr/?igshid=NTc4MTIwNjQ2YQ%3D%3D">
+                                    <img class="img-resize"
+                                        src="images/new-small-Instagram-logo-full-colour-png-184x184-pixels.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="team-box">
+                        <div class="imgBx">
+                            <img src="images/ilham.jpg">
+                        </div>
+                        <div class="imgtext">
+                            <strong>Ilham Firdaus</strong>
+                            <span>Solution Architect</span>
+                            <div class="social">
+                                <a href="https://www.instagram.com/ilham._.firdaus/?igshid=NTc4MTIwNjQ2YQ%3D%3D">
+                                    <img class="img-resize"
+                                        src="images/new-small-Instagram-logo-full-colour-png-184x184-pixels.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="team-box">
+                        <div class="imgBx">
+                            <img src="images/tashvene.jpg">
+                        </div>
+                        <div class="imgtext">
+                            <strong>Tashvene Preya</strong>
+                            <span>Algorithm Engineer</span>
+                            <div class="social">
+                                <a href="https://www.instagram.com/tashvene/?r=nametag">
+                                    <img class="img-resize"
+                                        src="images/new-small-Instagram-logo-full-colour-png-184x184-pixels.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="team-box">
+                        <div class="imgBx">
+                            <img src="images/syakira.jpg">
+                        </div>
+                        <div class="imgtext">
+                            <strong>Nur Syakira</strong>
+                            <span>Data Analyst</span>
+                            <div class="social">
+                                <a href="https://www.instagram.com/syvkiraaaaaaa/?igshid=MzNlNGNkZWQ4Mg%3D%3D">
+                                    <img class="img-resize"
+                                        src="images/new-small-Instagram-logo-full-colour-png-184x184-pixels.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        var firstSwiper = new Swiper("#first .mySwiper", {
+            pagination: {
+                el: "#first .swiper-pagination",
+                dynamicBullets: true,
+
+            },
+
+            navigation: {
+                nextEl: "#first .swiper-button-next",
+                prevEl: "#first .swiper-button-prev",
+            },
+        });
+
+        var teamSwiper = new Swiper("#team .mySwiper", {
+            slidesPerView: "auto",
+            spaceBetween: 30,
+            freeMode: true,
+            grabCursor: true,
+            effect: "coverflow",
+            centeredSlides: true,
+            pagination: {
+                el: "#team .swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: "#team .swiper-button-next",
+                prevEl: "#team .swiper-button-prev",
+            },
+        });
+
+        const firstSection = document.getElementById('first');
+        const teamSection = document.getElementById('team');
+
+        firstSection.style.display = 'block';
+        teamSection.style.display = 'none';
+
+        const teamLink = document.getElementById('team-link');
+        teamLink.addEventListener('click', function (e) {
+            e.preventDefault();
+            if (firstSection.style.display === 'none') {
+                fadeIn(firstSection);
+                fadeOut(teamSection);
+            } else {
+                fadeOut(firstSection);
+                fadeIn(teamSection);
+            }
+        });
+
+        const teamLinkInTeamSection = document.getElementById('team-link2');
+        teamLinkInTeamSection.addEventListener('click', function (e) {
+            e.preventDefault();
+            if (teamSection.style.display === 'none') {
+                fadeIn(teamSection);
+                fadeOut(firstSection);
+            } else {
+                fadeOut(teamSection);
+                fadeIn(firstSection);
+            }
+        });
+        function fadeIn(element) {
+            element.style.overflow = 'hidden';
+            element.style.opacity = 0;
+            element.style.display = 'block';
+            const fadeInAnimation = element.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 500 });
+            fadeInAnimation.onfinish = () => {
+                element.style.opacity = 1;
+                element.style.overflow = '';
+            };
+        }
+
+        function fadeOut(element) {
+            element.style.overflow = 'hidden';
+            element.style.opacity = 1;
+            const fadeOutAnimation = element.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 500 });
+            fadeOutAnimation.onfinish = () => {
+                element.style.display = 'none';
+                element.style.opacity = 0;
+                element.style.overflow = '';
+            };
+        }
+
+
+
+    </script>
+</body>
+
+</html>
